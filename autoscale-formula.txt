@@ -1,0 +1,2 @@
+$needcompute = max($ActiveTasks.GetSample(1), 0);
+$TargetDedicatedNodes = $needcompute ? 1 : 0;

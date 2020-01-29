@@ -1,0 +1,26 @@
+{
+    "id": "${task_id}",
+    "displayName": "${task}",
+    "commandLine": "${task}",
+    "containerSettings": {
+        "imageName": "${APP_IMAGE_TAG}"
+    },
+    "environmentSettings": [
+        {
+            "name": "AZURE_TENANT_ID",
+            "value": "${TENANT_ID}"
+        },
+        {
+            "name": "AZURE_CLIENT_ID",
+            "value": "${CLIENT_ID}"
+        },
+        {
+            "name": "AZURE_CLIENT_SECRET",
+            "value": "${CLIENT_SECRET}"
+        },
+        {
+            "name": "BLOB_URI",
+            "value": "${BLOB_URI}"
+        }
+    ]
+}

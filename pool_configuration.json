@@ -1,0 +1,30 @@
+{
+    "id": "${POOL_ID}",
+    "vmSize": "Standard_D2_v3",
+    "virtualMachineConfiguration": {
+        "imageReference": {
+            "publisher": "microsoft-azure-batch",
+            "offer": "ubuntu-server-container",
+            "sku": "16-04-lts",
+            "version": "latest"
+        },
+        "nodeAgentSKUId": "batch.node.ubuntu 16.04",
+        "containerConfiguration": {
+            "type": "dockerCompatible",
+            "containerRegistries": [
+                {
+                    "registryServer": "${ACR_REGISTRY}",
+                    "username": "${CLIENT_ID}",
+                    "password": "${CLIENT_SECRET}"
+                }
+            ]
+        }
+    },
+    "maxTasksPerNode": 1,
+    "taskSchedulingPolicy": {
+        "nodeFillType": "spread"
+    },
+    "enableAutoScale": true,
+    "autoScaleFormula": "$TargetDedicated=1;",
+    "autoScaleEvaluationInterval": 5
+}
