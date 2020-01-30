@@ -1,11 +1,11 @@
 # version of this demo run
-export V=1
+export V=2
 
 # Azure location to use
 export LOCATION=eastus
 
 # resource group
-export RESOURCE_GROUP=test-batch
+export RESOURCE_GROUP=ipprg$V
 
 # storage account name and a blob container
 export STORAGE_ACCOUNT=ipptestbatchstorage$V
