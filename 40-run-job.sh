@@ -19,6 +19,6 @@ echo "create tasks"
 tasks="task_generate_sample_data"
 for task in tasks; do
     export task_id=task_$RANDOM
-    export task full_uri
+    export task full_uri BLOB_URI
     envsubst < ./task_configuration.json > /tmp/task.json
     az batch task create --job-id $JOB_ID --json-file /tmp/task.json

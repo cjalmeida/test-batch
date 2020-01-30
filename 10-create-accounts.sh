@@ -10,7 +10,7 @@ set -e
 echo "set default location"
 az configure --defaults location=$LOCATION
 
-# echo "create a resource group batch-test"
+echo "create a resource group"
 az group create --location $LOCATION --name $RESOURCE_GROUP
 
 echo "create storage account"

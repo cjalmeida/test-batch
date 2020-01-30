@@ -1,6 +1,6 @@
 {
     "id": "${POOL_ID}",
-    "vmSize": "Standard_D2_v3",
+    "vmSize": "Standard_D2_v2",
     "virtualMachineConfiguration": {
         "imageReference": {
             "publisher": "microsoft-azure-batch",
@@ -26,5 +26,5 @@
     },
     "enableAutoScale": true,
     "autoScaleFormula": "$TargetDedicated=1;",
-    "autoScaleEvaluationInterval": 5
+    "autoScaleEvaluationInterval": "PT5H"
 }

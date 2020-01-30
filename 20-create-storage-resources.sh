@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -e
 . ./variables.sh
 . ./password.sh
 

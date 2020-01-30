@@ -1,8 +1,8 @@
 # version of this demo run
-export V=2
+export V=3
 
 # Azure location to use
-export LOCATION=eastus
+export LOCATION=brazilsouth
 
 # resource group
 export RESOURCE_GROUP=ipprg$V
@@ -19,7 +19,7 @@ export ACR_NAME=ippacr$V
 export ACR_REGISTRY=${ACR_NAME}.azurecr.io
 
 # batch pool id
-export POOL_ID=ipptestbatchpool$V
+export POOL_ID=ippbatchpool$V
 
 # Docker batch app container image
 export APP_IMAGE=$ACR_REGISTRY/sample_job

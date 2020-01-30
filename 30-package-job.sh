@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 . ./variables.sh
 
 # login to ACR, this does `docker login`
