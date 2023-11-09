@@ -1,5 +1,5 @@
 modin[ray]==0.7.0
-pyarrow==0.15.1
+pyarrow==14.0.1
 pandas==0.25.3
 azure-storage-blob==12.1.0
 azure-identity==1.2.0
